@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: inline-block;
+
+}
+
+.rootContainer {
+
+    height: 100vw;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    /* display: flex; */
+}
+
+.menuContainer {
+    width: 20%;
+    height: 100vw;
+}
+
+.sub-div {
+    background-color: #121212;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.navbar {
+    width: 100%;
+    /* height: 300px; */
+}
+
+.libraryContainer {
+    width: 100%;
+    height: 700px;
+
+}
+
+.menus {
+    /* margin: 5% 0 0 3%; */
+    padding: 3% 2% 3% 2%;
+
+}
+
+.menus .lib-icon {
+    height: 45px;
+    padding: 3% 2% 3% 2%;
+    display: inline-block;
+}
+
+.menus a {
+    color: white;
+    text-decoration: none;
+}
+
+.icons,i {
+    margin-right: 5%;
+}
+
+.menu-text {
+    height: 20px;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.menu-text:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.library-head {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 25px 20px -20px;
+}
+
+.asach {
+    position: absolute;
+    top: 20px;
+    /* margin-left: 3%; */
+}
+
+
+.app-icon img {
+    height: 30px;
+    margin: 5% 0 2% 0;
+}
+
+.left-album {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.left-album-item {
+    display: flex;
+    margin: 3%;
+    white-space: nowrap;
+}
+
+.left-album-item:hover {
+    background-color: #2d2d2d;
+    transition: 0.3s;
+}
+
+.left-album-img {
+    height: 50px;
+    border-radius: 10%;
+}
+
+
+
+.left-album-head {
+    margin: 1% 0 0 5%;
+}
+
+.left-album-desc {
+    height: 20px;
+    display: inline-block;
+    margin: 2%;
+    opacity: 0.7;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.homeContainer {
+    height: 100vh;
+    margin: 8px 0 0 6px;
+    padding: 0%;
+    /* left: 10px; */
+    right: 0;
+    width: 79%;
+    position: relative;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    
+    z-index: -1;
+    /* background-color: yellow; */
+}
+
+.home-header {
+    height: 64px;
+    border-radius: 10px;
+
+    position: fixed;
+    z-index: 1;
+    /* background-color: rgb(124, 130, 118); */
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #121212;
+    /* background-color: yellow;     */
+}
+
+.nav-btn-container {
+    /* background-color: yellow; */
+    /* z-index: 1; */
+    height: 64px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 0 1%;
+    /* padding: 1px; */
+
+}
+
+.nav-btn-container img {
+    width: 20px;
+}
+
+
+.arrow {
+    height: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #090909;
+    opacity: 0.7;
+}
+
+.arrow:hover {
+    opacity: 1;
+    transition: 0.2;
+}
+
+.left-arrow {
+    padding: 7px 0 0 5px;
+    aspect-ratio: 1;
+
+
+}
+
+.right-arrow {
+    padding: 5px 0 0 5px;
+    transform: rotate(180deg);
+}
+
+.sign {
+    height: 50px;
+
+}
+
+.sign-up {
+    height: 48px;
+    width: 109px;
+    position: absolute;
+    right: 100px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.sign-up:hover {
+    opacity: 1;
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+.sign-in {
+    height: 48px;
+    width: 109px;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.gradient {
+    height: 400px;
+    margin-top: 70px;
+    background: rgb(25, 25, 25);
+    background: linear-gradient(180deg, rgba(25, 25, 25, 1) 35%, rgba(18, 18, 18, 1) 100%);
+    /* z-index: -1; */
+}
+
+
+.moodContainer {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mood {
+    margin: 0 25px 50px 25px;
+    /* height: 300px; */
+    height: fit-content;
+    /* z-index: 1; */
+}
+
+.mood-name {
+    font-size: 24px;
+}
+
+.album-row {
+    width: 1303px;
+    /* height: 580px; */
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.album-row-item {
+    /* margin: 2%; */
+
+    height: 277px;
+    width: 184px;
+    border-radius: 7px;
+    width: max-content(180px);
+    padding: 12px;
+    background-color: #181818;
+}
+
+.album-row-item:hover {
+    background-color: #2d2d2d;
+
+    transition: 0.3s;
+}
+
+.album-row-item img {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 6px rgba(21, 21, 21, 0.677);
+}
+
+.album-row-item-name {
+    font-size: 17px;
+    margin: 5px;
+}
+
+.album-row-item-desc {
+    margin: 5px;
+    font-size: 13px;
+    opacity: 0.6;
+}
